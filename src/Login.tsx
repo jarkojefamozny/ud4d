@@ -63,7 +63,7 @@ class Login extends Component<IProps,  IState> {
     }
 
     sendData() {
-        const XHR : XMLHttpRequest = new XMLHttpRequest();
+        const XHR: XMLHttpRequest = new XMLHttpRequest();
         const FD = new FormData();
         FD.append("login", this.state.login)
         FD.append("password", this.state.password)

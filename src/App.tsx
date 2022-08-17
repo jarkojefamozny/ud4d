@@ -25,21 +25,17 @@ function App() {
           Pokud by něco v zadání nebylo jasné, tak to můžete popsat v README spolu s variantou, kterou jste
           nakonec implementovali.
           </p>
-          <p>
-          Ukázka validního uživatelského jména:
-            <ul>
-              <li>jolanda@ud4d.com</li>
-              <li>frontend-pozice@ud4d-bez-domeny</li>
-              <li>cool.mail@gmail.cz</li>
-            </ul>
-          </p>
-          <p>
-          Ukázka nevalidního uživatelského jména:
-            <ul>
-              <li>toto@neni@validni</li>
-              <li>Nevalidnijmeno</li>
-            </ul>
-          </p>
+          <p> Ukázka validního uživatelského jména:</p>
+          <ul>
+            <li>jolanda@ud4d.com</li>
+            <li>frontend-pozice@ud4d-bez-domeny</li>
+            <li>cool.mail@gmail.cz</li>
+          </ul>
+          <p> Ukázka nevalidního uživatelského jména: </p>
+          <ul>
+            <li>toto@neni@validni</li>
+            <li>Nevalidnijmeno</li>
+          </ul>
           <p>
           Pro odevzdání použijte GitHub/Bitbucket/Gitlab (poslat nám link na daný repozitář).
           </p>

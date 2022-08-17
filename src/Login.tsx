@@ -63,26 +63,21 @@ class Login extends Component<IProps,  IState> {
     }
 
     sendData() {
-        const XHR: XMLHttpRequest = new XMLHttpRequest();
-        const FD = new FormData();
-        FD.append("login", this.state.login)
-        FD.append("password", this.state.password)
-
-        // on success
-        XHR.addEventListener("load", (event) => {
-            // Our fake backend logic
-            console.log(Object.fromEntries(FD))
-            alert(this.isDataValid(this.state.login, this.state.password) ? "Success! Congratulations" : "Mission Failed! We'll Get Em Next Time");
+        fetch('', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            credentials: 'include',
+            body: JSON.stringify({login: this.state.login, password: this.state.password}),
+            })
+            .then((response) => {
+                // faking a happy response
+                alert(this.isDataValid(this.state.login, this.state.password) ? "Success! Congratulations" : "Mission Failed! We'll Get Em Next Time");
+            })
+            .catch((error) => {
+                console.error('Error:', error);
         });
-
-        // on error
-        XHR.addEventListener("error", (event) => {
-            alert('Oops! Something went wrong.');
-        });
-
-        // Set up our request
-        XHR.open("POST", "");
-        XHR.send(FD);
     }
 
     render() {

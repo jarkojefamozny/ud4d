@@ -4,6 +4,8 @@ My solution for "login" assignment.
 Originally, I had solution where user could submit anything and after that "system" verified login/password.
 But with current solution I am more satisfied as a user is forced to input correct data. 
 
+The part "reacting to the response and what should happen after the login" was not in the scope.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
